@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body>
+    
+    
+    <script>
+
+        var a = 5;
+        var b = 10;
+
+        // Basic example of a function and format of a function
+        function myFunction() {
+            var c = a * b;
+            document.write(c);
+        }        
+
+        myFunction();
+
+        var score = 0;
+        var lives = 10;
+        var gameOver = false;
+        
+        function lifeLost() {
+            score = 0;
+            // -- decrements the lives value by 1 to give you your life total after losing a life
+            lives--;
+            // Changes boolean value of gameOver to true from the default false value while a player still has lives
+            gameOver = true;
+            document.write("<h2>Game Over, you have " + lives + " lives left</h2>");
+        }
+
+        lifeLost();
+        lifeLost();
+        lifeLost();
+        lifeLost();
+
+    </script>
+</body>
+</html>

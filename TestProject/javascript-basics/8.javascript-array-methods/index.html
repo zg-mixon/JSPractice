@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arrays</title>
+    <title>Array Methods</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
@@ -14,12 +14,23 @@
     <script>
 
         var users = [];
-        users[0] = "Zach";
-        users[1] = "Maribel";
-        users[2] = "Candis";
-        users[3] = "Conner";
+        //Adds values to an array, multiple values can be added when strings are seperated by a commma
+        users.push("Tom", "Jimbo");
+        //Adds value to beginning of an array
+        users.unshift("Mary");
+        //Reverse order of array
+        users.reverse();
+        //Slice can take out a value in an array to store to a variable
+        var slicedArray = users.slice(1,2);
+        document.write(slicedArray);
+        console.log(users);
+        //Removes first value of an array
+        users.shift();
+        //Removes last value of an array
+        users.pop();
+        
 
-        document.write(users.length);
+        
 
         
     </script>
